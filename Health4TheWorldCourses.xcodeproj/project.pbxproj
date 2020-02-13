@@ -22,6 +22,7 @@
 		1691018223F519A400625A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1691018523F519A400625A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1691018723F519A400625A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1691018D23F5218400625A34 /* Health4TheWorldCourses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Health4TheWorldCourses.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		1691017A23F5199C00625A34 /* Health4TheWorldCourses */ = {
 			isa = PBXGroup;
 			children = (
+				1691018D23F5218400625A34 /* Health4TheWorldCourses.entitlements */,
 				1691017B23F5199C00625A34 /* AppDelegate.swift */,
 				1691017D23F5199C00625A34 /* ViewController.swift */,
 				1691017F23F5199C00625A34 /* Main.storyboard */,
@@ -96,6 +98,14 @@
 				TargetAttributes = {
 					1691017723F5199C00625A34 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,9 +292,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health4TheWorldCourses/Health4TheWorldCourses.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = Health4TheWorldCourses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.h4tw.courses.Health4TheWorldCourses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,9 +312,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health4TheWorldCourses/Health4TheWorldCourses.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = Health4TheWorldCourses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.h4tw.courses.Health4TheWorldCourses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
