@@ -8,21 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		1691017C23F5199C00625A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691017B23F5199C00625A34 /* AppDelegate.swift */; };
-		1691017E23F5199C00625A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691017D23F5199C00625A34 /* ViewController.swift */; };
+		1691017E23F5199C00625A34 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691017D23F5199C00625A34 /* ProfileViewController.swift */; };
 		1691018123F5199C00625A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1691017F23F5199C00625A34 /* Main.storyboard */; };
 		1691018323F519A400625A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1691018223F519A400625A34 /* Assets.xcassets */; };
 		1691018623F519A400625A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1691018423F519A400625A34 /* LaunchScreen.storyboard */; };
+		1691019523F9200A00625A34 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019423F9200A00625A34 /* ProfileCell.swift */; };
+		1691019923FA4BBB00625A34 /* ProfileStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019823FA4BBB00625A34 /* ProfileStruct.swift */; };
+		1691019C23FA53DA00625A34 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019B23FA53DA00625A34 /* AboutUsVC.swift */; };
+		1691019E23FA5F9B00625A34 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019D23FA5F9B00625A34 /* CustomTabBar.swift */; };
+		169101A023FA67D000625A34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019F23FA67D000625A34 /* HomeViewController.swift */; };
+		169101A223FA680D00625A34 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A123FA680D00625A34 /* SavedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1691017823F5199C00625A34 /* Health4TheWorldCourses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health4TheWorldCourses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1691017B23F5199C00625A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1691017D23F5199C00625A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1691017D23F5199C00625A34 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1691018023F5199C00625A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1691018223F519A400625A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1691018523F519A400625A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1691018723F519A400625A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1691018D23F5218400625A34 /* Health4TheWorldCourses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Health4TheWorldCourses.entitlements; sourceTree = "<group>"; };
+		1691019423F9200A00625A34 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		1691019823FA4BBB00625A34 /* ProfileStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStruct.swift; sourceTree = "<group>"; };
+		1691019B23FA53DA00625A34 /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		1691019D23FA5F9B00625A34 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		1691019F23FA67D000625A34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		169101A123FA680D00625A34 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,8 @@
 		1691017A23F5199C00625A34 /* Health4TheWorldCourses */ = {
 			isa = PBXGroup;
 			children = (
+				1691019A23FA53B200625A34 /* Profile Screens */,
+				1691019323F91FD400625A34 /* Home Screen */,
 				1691019223F5280D00625A34 /* Data Models */,
 				1691019123F527F400625A34 /* Resources */,
 				1691019023F527DA00625A34 /* Supporting Files */,
@@ -62,7 +76,6 @@
 				1691018E23F527AC00625A34 /* Storyboards */,
 				1691018D23F5218400625A34 /* Health4TheWorldCourses.entitlements */,
 				1691017B23F5199C00625A34 /* AppDelegate.swift */,
-				1691017D23F5199C00625A34 /* ViewController.swift */,
 				1691018723F519A400625A34 /* Info.plist */,
 			);
 			path = Health4TheWorldCourses;
@@ -80,6 +93,7 @@
 		1691018F23F527D000625A34 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1691019823FA4BBB00625A34 /* ProfileStruct.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -104,6 +118,26 @@
 			children = (
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		1691019323F91FD400625A34 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1691019423F9200A00625A34 /* ProfileCell.swift */,
+				1691017D23F5199C00625A34 /* ProfileViewController.swift */,
+				1691019F23FA67D000625A34 /* HomeViewController.swift */,
+				169101A123FA680D00625A34 /* SavedViewController.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		1691019A23FA53B200625A34 /* Profile Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1691019B23FA53DA00625A34 /* AboutUsVC.swift */,
+				1691019D23FA5F9B00625A34 /* CustomTabBar.swift */,
+			);
+			path = "Profile Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1691017E23F5199C00625A34 /* ViewController.swift in Sources */,
+				1691019923FA4BBB00625A34 /* ProfileStruct.swift in Sources */,
+				1691017E23F5199C00625A34 /* ProfileViewController.swift in Sources */,
+				1691019523F9200A00625A34 /* ProfileCell.swift in Sources */,
 				1691017C23F5199C00625A34 /* AppDelegate.swift in Sources */,
+				1691019E23FA5F9B00625A34 /* CustomTabBar.swift in Sources */,
+				169101A023FA67D000625A34 /* HomeViewController.swift in Sources */,
+				169101A223FA680D00625A34 /* SavedViewController.swift in Sources */,
+				1691019C23FA53DA00625A34 /* AboutUsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = Health4TheWorldCourses/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,7 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = Health4TheWorldCourses/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
