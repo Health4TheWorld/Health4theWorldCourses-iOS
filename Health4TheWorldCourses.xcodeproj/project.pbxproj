@@ -18,6 +18,12 @@
 		1691019E23FA5F9B00625A34 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019D23FA5F9B00625A34 /* CustomTabBar.swift */; };
 		169101A023FA67D000625A34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691019F23FA67D000625A34 /* HomeViewController.swift */; };
 		169101A223FA680D00625A34 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A123FA680D00625A34 /* SavedViewController.swift */; };
+		169101A423FE5C4500625A34 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A323FE5C4500625A34 /* Courses.swift */; };
+		169101A6240329AC00625A34 /* SubjectsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A5240329AC00625A34 /* SubjectsViewCell.swift */; };
+		169101A82403369100625A34 /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A72403369100625A34 /* EventsViewCell.swift */; };
+		169101AA24035DE800625A34 /* CoursesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A924035DE700625A34 /* CoursesStruct.swift */; };
+		169101AC24035DFC00625A34 /* EventsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101AB24035DFC00625A34 /* EventsStruct.swift */; };
+		169101AE24035E0B00625A34 /* SubjectsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101AD24035E0B00625A34 /* SubjectsStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		1691019D23FA5F9B00625A34 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		1691019F23FA67D000625A34 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		169101A123FA680D00625A34 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		169101A323FE5C4500625A34 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		169101A5240329AC00625A34 /* SubjectsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewCell.swift; sourceTree = "<group>"; };
+		169101A72403369100625A34 /* EventsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
+		169101A924035DE700625A34 /* CoursesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesStruct.swift; sourceTree = "<group>"; };
+		169101AB24035DFC00625A34 /* EventsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsStruct.swift; sourceTree = "<group>"; };
+		169101AD24035E0B00625A34 /* SubjectsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				1691019823FA4BBB00625A34 /* ProfileStruct.swift */,
+				169101A924035DE700625A34 /* CoursesStruct.swift */,
+				169101AB24035DFC00625A34 /* EventsStruct.swift */,
+				169101AD24035E0B00625A34 /* SubjectsStruct.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -127,6 +142,9 @@
 				1691017D23F5199C00625A34 /* ProfileViewController.swift */,
 				1691019F23FA67D000625A34 /* HomeViewController.swift */,
 				169101A123FA680D00625A34 /* SavedViewController.swift */,
+				169101A323FE5C4500625A34 /* Courses.swift */,
+				169101A5240329AC00625A34 /* SubjectsViewCell.swift */,
+				169101A72403369100625A34 /* EventsViewCell.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -220,13 +238,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1691019923FA4BBB00625A34 /* ProfileStruct.swift in Sources */,
+				169101AC24035DFC00625A34 /* EventsStruct.swift in Sources */,
 				1691017E23F5199C00625A34 /* ProfileViewController.swift in Sources */,
 				1691019523F9200A00625A34 /* ProfileCell.swift in Sources */,
 				1691017C23F5199C00625A34 /* AppDelegate.swift in Sources */,
 				1691019E23FA5F9B00625A34 /* CustomTabBar.swift in Sources */,
 				169101A023FA67D000625A34 /* HomeViewController.swift in Sources */,
+				169101AE24035E0B00625A34 /* SubjectsStruct.swift in Sources */,
+				169101A82403369100625A34 /* EventsViewCell.swift in Sources */,
 				169101A223FA680D00625A34 /* SavedViewController.swift in Sources */,
+				169101A6240329AC00625A34 /* SubjectsViewCell.swift in Sources */,
 				1691019C23FA53DA00625A34 /* AboutUsVC.swift in Sources */,
+				169101A423FE5C4500625A34 /* Courses.swift in Sources */,
+				169101AA24035DE800625A34 /* CoursesStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
