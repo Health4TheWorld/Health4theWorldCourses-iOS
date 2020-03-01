@@ -7,39 +7,40 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class HomeViewController: UIViewController {
 
-    var cellIDRC = "Courses"
-    var cellIDUI = "Events"
-    var cellIDSubjects = "Subjects"
+    var cellIDRC = Constants.cellIDs.cellIDRC
+    var cellIDUI = Constants.cellIDs.cellIDUI
+    var cellIDSubjects = Constants.cellIDs.cellIDSubjects
     @IBOutlet weak var RCCollectionView: UICollectionView!
     @IBOutlet weak var subjectsTableView: UITableView!
     @IBOutlet weak var UECollectionView: UICollectionView!
     
-    let icons = ["Cardiology","Infectious", "Oncology","ute","lungs","Surgery"]
-    
-    let subjects = [
-        SubjectsStruct(subjects: "Cardiology", segueLinks: "Cardiology"),
-        SubjectsStruct(subjects: "Infectious Disease", segueLinks: "Infectious Disease"),
-        SubjectsStruct(subjects: "Oncology", segueLinks: "Oncology"),
-        SubjectsStruct(subjects: "Obstetrics & Gynecology", segueLinks: "Obstetrics & Gynecology"),
-        SubjectsStruct(subjects: "Pulmonology", segueLinks: "Pulmonology"),
-        SubjectsStruct(subjects: "Surgery", segueLinks: "Surgery")
-    ]
-    
-    let courses = [
-        CoureseStruct(courses: "", segueLinks: "")
-    ]
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Home"
+        navigationItem.title = Constants.titles.home
+        setupView()
         
+          let db = Firestore.firestore()
+        db.collection(Constants.DBCollections.courses).getDocuments { (snapshot, error) in
+            if error != nil {
+                print(error!)
+            }else{
+                for document in (snapshot?.documents)! {
+                    if let title = document.data()[Constants.Courses.title] as? String{
+                        if let description = document.data()[Constants.Courses.description] as? String {
+                            print(title, description)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func setupView(){
         self.RCCollectionView?.backgroundColor = UIColor.red
         self.RCCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellIDRC)
         
@@ -95,15 +96,17 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return subjects.count
+        return Constants.Subjects.subjectsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIDSubjects, for: indexPath) as! SubjectsViewCell
     
-        cell.itemView.text = subjects[indexPath.row].subjects
+        let subjects = Constants.Subjects.subjectsList
         
-        cell.iconView.image = UIImage(named: icons[indexPath.row])
+        cell.itemView.text = subjects[indexPath.row]
+        
+        cell.iconView.image = UIImage(named: Constants.Subjects.icons[indexPath.row])
         
         return cell
     }

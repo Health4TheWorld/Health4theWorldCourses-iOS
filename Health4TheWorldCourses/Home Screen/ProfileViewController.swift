@@ -14,18 +14,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var profileIcon: UIImageView!
     @IBOutlet weak var profileTableView: UITableView!
     
-     var cellID = "ProfileCell"
-    
-    var headers = ["My Achievement", "Account Settings", "Support"]
-    
-    var tableItems = [
-        ProfileStruct(ProfileItems: [ "Completed Quizzes & Certificates","Statistics"], segueLinks: ["CompletedQuizzes","Statistics"])
-       ,
-        ProfileStruct(ProfileItems: ["Edit my profile","Choose Language", "Account Security & Privacy"], segueLinks: ["EditProfile","Language","Security&Privacy"])
-    ,
-         ProfileStruct(ProfileItems:  ["Report a problem", "Contact us","About H4TW"], segueLinks: ["ReportProblem","ContactUs","AboutH4TW"])
-   
-    ]
+    var cellID = Constants.cellIDs.cellIDProfile
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,18 +41,18 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableItems[section].ProfileItems.count
+        return  Constants.Profile.profileItems[section].count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return tableItems.count
+        return Constants.Profile.profileItems.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ProfileCell
         
-       let item = tableItems[indexPath.section].ProfileItems[indexPath.row]
+       let item = Constants.Profile.profileItems[indexPath.section][indexPath.row]
       
         cell.itemView.text = item
         
@@ -72,9 +61,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("selected segue: ", tableItems [indexPath.section].segueLinks[indexPath.row])
+        print("selected segue: ", Constants.Profile.segueLinks[indexPath.section] [indexPath.row])
         
-        performSegue(withIdentifier: tableItems [indexPath.section].segueLinks[indexPath.row], sender: self)
+        performSegue(withIdentifier: Constants.Profile.segueLinks[indexPath.section] [indexPath.row], sender: self)
         
     }
     
@@ -95,7 +84,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         label.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
         
-        label.text = headers[section]
+        label.text = Constants.Profile.headers[section]
     }
     
 }
