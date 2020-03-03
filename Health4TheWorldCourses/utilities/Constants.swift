@@ -67,4 +67,7 @@ enum Constants{
     enum titles {
         static let home: String = "Home"
     }
+    
+    /* Welcome buttons */
+    static let exploreButtonTitle: String = "EXPLORE COURSES"
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t88-Mw-JgB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login HomeVC-->
+        <scene sceneID="sIr-B7-DDa">
+            <objects>
+                <viewController id="KZ2-xN-yEq" customClass="LoginHomeVC" customModule="Health4TheWorldCourses" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ift-hS-zU3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wvi-nG-BPn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RjK-rr-4v0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zM7-dg-x4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-370"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="nUO-cf-sac">
+            <objects>
+                <viewController id="qM2-U4-QFz" customClass="LoginVC" customModule="Health4TheWorldCourses" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rey-cb-Ja3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XIS-sp-Ynz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fJ-7i-hwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="307"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="KWY-Ki-wQb">
+            <objects>
+                <viewController id="f0N-HH-8EC" customClass="SignUpVC" customModule="Health4TheWorldCourses" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AjX-Qz-ynF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jlu-uf-cGC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwJ-sg-DKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="-370"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lQm-ze-yIl">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNav" id="t88-Mw-JgB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LIj-QX-LDa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KZ2-xN-yEq" kind="relationship" relationship="rootViewController" id="7P4-Wf-dQo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8l-qh-dQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1006" y="-370"/>
+        </scene>
+    </scenes>
+</document>
