@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWo-Cq-eBj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ4-Yr-IuZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -362,6 +362,22 @@
             </objects>
             <point key="canvasLocation" x="-74" y="-1765"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="94W-7D-wz1">
+            <objects>
+                <navigationController id="qQ4-Yr-IuZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cah-6b-G1y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aWo-Cq-eBj" kind="relationship" relationship="rootViewController" id="9lB-V1-w0m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qM-9j-tI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3894" y="-713"/>
+        </scene>
         <!--WelcomeVC-->
         <scene sceneID="80a-de-voG">
             <objects>
@@ -375,14 +391,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Text_Transparent 2 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-zF-lnd">
-                                <rect key="frame" x="162" y="94" width="90" height="90"/>
+                                <rect key="frame" x="162" y="138" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="kNr-eL-vf4"/>
                                     <constraint firstAttribute="width" constant="90" id="udk-eK-lcl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zc-Ww-UYD">
-                                <rect key="frame" x="152" y="194" width="110" height="19"/>
+                                <rect key="frame" x="152" y="238" width="110" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="wWR-ft-lVB"/>
                                 </constraints>
@@ -391,7 +407,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health4TheWorld" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOJ-eV-LKB">
-                                <rect key="frame" x="114.5" y="223" width="185" height="28"/>
+                                <rect key="frame" x="114.5" y="267" width="185" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="7kQ-lJ-812"/>
                                 </constraints>
@@ -400,7 +416,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACADEMY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRf-oJ-b1d">
-                                <rect key="frame" x="64" y="261" width="286" height="52"/>
+                                <rect key="frame" x="64" y="305" width="286" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="l0i-us-nX0"/>
                                 </constraints>
@@ -409,7 +425,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_medicine_b1ol (1) 1" translatesAutoresizingMaskIntoConstraints="NO" id="Ov4-Ag-IGj">
-                                <rect key="frame" x="90.5" y="403" width="233" height="165"/>
+                                <rect key="frame" x="90.5" y="447" width="233" height="165"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="hIX-Lv-Few"/>
                                     <constraint firstAttribute="height" constant="165" id="jys-fY-6Hm"/>
@@ -440,6 +456,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v4H-RT-x7O"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LCM-fC-a8f"/>
                     <connections>
                         <outlet property="backgroundView" destination="ARu-n0-VKw" id="Ker-6n-qfd"/>
                         <outlet property="label1" destination="4zc-Ww-UYD" id="yGd-AY-AmU"/>
@@ -451,14 +468,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7i-8C-hQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2994.202898550725" y="-713.16964285714278"/>
-        </scene>
-        <!--LoginNav-->
-        <scene sceneID="GlA-Sg-TgB">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Login" storyboardName="Login" referencedIdentifier="LoginNav" id="DWW-iD-UmO" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ka7-vb-le9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2289" y="-713"/>
         </scene>
     </scenes>
     <resources>

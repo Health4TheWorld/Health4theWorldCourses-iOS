@@ -27,6 +27,7 @@
 		16B3064B240CE01800CA4BC4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064A240CE01800CA4BC4 /* SignUpVC.swift */; };
 		16B3064D240CE06400CA4BC4 /* LoginHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064C240CE06400CA4BC4 /* LoginHomeVC.swift */; };
 		16B30650240E04B000CA4BC4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064F240E04B000CA4BC4 /* WelcomeVC.swift */; };
+		16B30652240F745400CA4BC4 /* ConstantTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B30651240F745400CA4BC4 /* ConstantTexts.swift */; };
 		49409994CABEAD8BF1A19397 /* Pods_Health4TheWorldCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E24E26C7C1E9A6F555A8DF /* Pods_Health4TheWorldCourses.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		16B3064A240CE01800CA4BC4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		16B3064C240CE06400CA4BC4 /* LoginHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeVC.swift; sourceTree = "<group>"; };
 		16B3064F240E04B000CA4BC4 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		16B30651240F745400CA4BC4 /* ConstantTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantTexts.swift; sourceTree = "<group>"; };
 		19E24E26C7C1E9A6F555A8DF /* Pods_Health4TheWorldCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health4TheWorldCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C2F298A520AFB935C7ACE1 /* Pods-Health4TheWorldCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.release.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.release.xcconfig"; sourceTree = "<group>"; };
 		E9CD340988DA3F8A19F412DF /* Pods-Health4TheWorldCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.debug.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				16B30643240B90B400CA4BC4 /* Constants.swift */,
+				16B30651240F745400CA4BC4 /* ConstantTexts.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B30652240F745400CA4BC4 /* ConstantTexts.swift in Sources */,
 				1691017E23F5199C00625A34 /* ProfileViewController.swift in Sources */,
 				1691019523F9200A00625A34 /* ProfileCell.swift in Sources */,
 				16B30649240CE00300CA4BC4 /* LoginVC.swift in Sources */,
