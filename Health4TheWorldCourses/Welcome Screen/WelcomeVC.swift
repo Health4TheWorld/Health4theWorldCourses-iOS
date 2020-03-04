@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class WelcomeVC: UIViewController {
     
     @IBOutlet weak var backgroundView: UIView!
@@ -54,8 +55,8 @@ class WelcomeVC: UIViewController {
         let buttonView = UIView()
         
         self.exploreButton.frame = CGRect(x: 0, y: 0, width: 240, height: 48)
-        self.exploreButton.setTitle(Constants.exploreButtonTitle, for: .normal)
-        self.exploreButton.addTarget(self, action: #selector(self.exploreButtonClicked), for: .allTouchEvents)
+        self.exploreButton.setTitle(Constants.ButtonTitles.exploreButtonTitle, for: .normal)
+        self.exploreButton.addTarget(self, action: #selector(self.exploreButtonClicked), for: .touchUpInside)
         self.exploreButton.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -109,7 +110,17 @@ class WelcomeVC: UIViewController {
         self.exploreButton.heightAnchor.constraint(equalToConstant: 48).isActive = true
     }
     
+    @available(iOS 13.0, *)
     @objc func exploreButtonClicked(){
         print("explore button clicked")
+        
+        let loginStoryboard = UIStoryboard(name: Constants.storyboard_login, bundle: Bundle.main)
+        guard let destination = loginStoryboard.instantiateViewController(identifier: Constants.viewController_loginHomeVC) as? LoginHomeVC else{
+            print(" Couldn't find the view controller")
+            return
+        }
+        destination.navigationItem.title = Constants.titles.loginHome
+        navigationController?.pushViewController(destination, animated: true)
     }
+ 
 }

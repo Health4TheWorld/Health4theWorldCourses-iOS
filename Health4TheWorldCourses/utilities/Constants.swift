@@ -66,8 +66,27 @@ enum Constants{
     /* View Titles **/
     enum titles {
         static let home: String = "Home"
+        static let loginHome: String = "H4TW Academy"
     }
     
-    /* Welcome buttons */
-    static let exploreButtonTitle: String = "EXPLORE COURSES"
+    enum ButtonTitles {
+        /* Welcome buttons */
+        static let exploreButtonTitle: String = "EXPLORE COURSES"
+        static let googleButtonTitle: String = "Continue with Google"
+        static let facebookButtonTitle: String = "Continue with Facebook"
+        static let emailSignUpTitle: String = "SignUp with Email"
+        static let loginTitle: String = "Login"
+        static let skipTitle: String = "Skip for now"
+    }
+
+    
+    /* Segues */
+    static let segue_loginHomeVC: String = "loginHomeVC"
+    static let segue_welcomeToLogin: String = "welcomeToLogin"
+    
+    /* Storyboards */
+    static let storyboard_login: String = "Login"
+    
+    /* View Controllers*/
+    static let viewController_loginHomeVC: String = "loginHomeVC"
 }
