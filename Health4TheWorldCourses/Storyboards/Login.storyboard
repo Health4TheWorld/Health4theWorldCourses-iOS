@@ -32,36 +32,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roZ-Zp-Oxi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roZ-Zp-Oxi">
                                 <rect key="frame" x="60" y="178" width="294" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNz-xT-ita">
-                                <rect key="frame" x="20" y="218.5" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNz-xT-ita">
+                                <rect key="frame" x="20" y="218.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-8a-LiR">
+                                <rect key="frame" x="10" y="339" width="394" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evX-P8-QcC" userLabel="googleSignIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="googleSignInClicked:" destination="KZ2-xN-yEq" eventType="touchUpInside" id="TOp-ao-hlV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBb-t1-Olh" userLabel="fbSignIn">
+                                        <rect key="frame" x="0.0" y="54" width="394" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="fbSignInClicked:" destination="KZ2-xN-yEq" eventType="touchUpInside" id="kF3-Ao-a7L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-lR-bad" userLabel="emailSignIn">
+                                        <rect key="frame" x="0.0" y="104" width="394" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="emailSignInClicked:" destination="KZ2-xN-yEq" eventType="touchUpInside" id="9uN-Da-Vmg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dEk-kw-8AP">
+                                <rect key="frame" x="60" y="663.5" width="294" height="148.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlreadyUser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-Nl-cRx">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZy-gr-vPm">
+                                        <rect key="frame" x="0.0" y="50.5" width="294" height="34"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="LoginClicked:" destination="KZ2-xN-yEq" eventType="touchUpInside" id="BIY-Zj-BTl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg5-n2-Fuc">
+                                        <rect key="frame" x="0.0" y="114.5" width="294" height="34"/>
+                                        <state key="normal" title="Skip"/>
+                                        <connections>
+                                            <action selector="skipClicked:" destination="KZ2-xN-yEq" eventType="touchUpInside" id="SBP-sp-ail"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Wvi-nG-BPn" firstAttribute="bottom" secondItem="dEk-kw-8AP" secondAttribute="bottom" constant="50" id="ALb-9O-uhR"/>
+                            <constraint firstItem="Wvi-nG-BPn" firstAttribute="trailing" secondItem="1tG-8a-LiR" secondAttribute="trailing" constant="10" id="DOh-Tq-TLe"/>
+                            <constraint firstItem="1tG-8a-LiR" firstAttribute="top" secondItem="mNz-xT-ita" secondAttribute="bottom" constant="100" id="JRw-LT-eRR"/>
+                            <constraint firstItem="1tG-8a-LiR" firstAttribute="leading" secondItem="Wvi-nG-BPn" secondAttribute="leading" constant="10" id="U2g-As-ZeK"/>
                             <constraint firstItem="roZ-Zp-Oxi" firstAttribute="top" secondItem="Wvi-nG-BPn" secondAttribute="top" constant="90" id="VLc-a7-LXI"/>
                             <constraint firstItem="mNz-xT-ita" firstAttribute="centerX" secondItem="ift-hS-zU3" secondAttribute="centerX" id="b7V-Gu-jvs"/>
                             <constraint firstItem="mNz-xT-ita" firstAttribute="top" secondItem="roZ-Zp-Oxi" secondAttribute="bottom" constant="20" id="eHJ-2K-yfl"/>
+                            <constraint firstItem="Wvi-nG-BPn" firstAttribute="trailing" secondItem="dEk-kw-8AP" secondAttribute="trailing" constant="60" id="jHJ-v7-XCr"/>
                             <constraint firstItem="mNz-xT-ita" firstAttribute="leading" secondItem="Wvi-nG-BPn" secondAttribute="leading" constant="20" id="jg7-HS-ySm"/>
                             <constraint firstItem="roZ-Zp-Oxi" firstAttribute="leading" secondItem="Wvi-nG-BPn" secondAttribute="leading" constant="60" id="lAR-Gn-yS9"/>
                             <constraint firstItem="roZ-Zp-Oxi" firstAttribute="centerX" secondItem="ift-hS-zU3" secondAttribute="centerX" id="lmG-t2-BSv"/>
                             <constraint firstItem="Wvi-nG-BPn" firstAttribute="trailing" secondItem="mNz-xT-ita" secondAttribute="trailing" constant="20" id="oL1-5X-kC3"/>
                             <constraint firstItem="Wvi-nG-BPn" firstAttribute="trailing" secondItem="roZ-Zp-Oxi" secondAttribute="trailing" constant="60" id="t5G-7l-3RT"/>
+                            <constraint firstItem="dEk-kw-8AP" firstAttribute="centerX" secondItem="ift-hS-zU3" secondAttribute="centerX" id="uPe-Js-ICA"/>
+                            <constraint firstItem="dEk-kw-8AP" firstAttribute="leading" secondItem="Wvi-nG-BPn" secondAttribute="leading" constant="60" id="yQN-Kn-WBK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wvi-nG-BPn"/>
                     </view>
                     <navigationItem key="navigationItem" id="RjK-rr-4v0"/>
                     <connections>
+                        <outlet property="alreadyUserClicked" destination="ShN-Nl-cRx" id="6Ep-O9-ypt"/>
+                        <outlet property="alreadyUserLabel" destination="ShN-Nl-cRx" id="lMx-wz-wnC"/>
+                        <outlet property="emailSignIn" destination="hpR-lR-bad" id="dwp-f6-BEa"/>
+                        <outlet property="fbSignIn" destination="PBb-t1-Olh" id="gBU-6I-Nzf"/>
+                        <outlet property="googleSignIn" destination="evX-P8-QcC" id="xVT-yi-42P"/>
                         <outlet property="label1" destination="roZ-Zp-Oxi" id="xcL-0H-dYT"/>
                         <outlet property="label2" destination="mNz-xT-ita" id="l2f-te-nzg"/>
+                        <outlet property="stackView" destination="1tG-8a-LiR" id="mFg-nG-cZr"/>
+                        <outlet property="stackView2" destination="dEk-kw-8AP" id="IKX-Hk-voe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zM7-dg-x4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
