@@ -83,6 +83,7 @@ enum Constants{
     /* Segues */
     static let segue_loginHomeVC: String = "loginHomeVC"
     static let segue_welcomeToLogin: String = "welcomeToLogin"
+    static let segue_homeTab: String = "HomeTab"
     
     /* Storyboards */
     static let storyboard_login: String = "Login"
