@@ -16,7 +16,7 @@ class WelcomeVC: UIViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var medImage: UIImageView!
-    let exploreButton = UIButton(type: .custom)
+    var exploreButton =  CustomButton()
 
     
     override func viewDidLoad() {
@@ -51,76 +51,30 @@ class WelcomeVC: UIViewController {
         setupButton()
     }
     
+  
+    
     func setupButton(){
-        let buttonView = UIView()
-        
-        self.exploreButton.frame = CGRect(x: 0, y: 0, width: 240, height: 48)
-        self.exploreButton.setTitle(Constants.ButtonTitles.exploreButtonTitle, for: .normal)
-        self.exploreButton.addTarget(self, action: #selector(self.exploreButtonClicked), for: .touchUpInside)
-        self.exploreButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        let shadows = UIView()
-        shadows.frame = exploreButton.frame
-        shadows.isUserInteractionEnabled = true
-        shadows.clipsToBounds = false
-        
-        let shadowPath0 = UIBezierPath(roundedRect: shadows.bounds, cornerRadius: 5)
-        
-        let layer0 = CALayer()
-        layer0.shadowPath = shadowPath0.cgPath
-        layer0.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        layer0.shadowOpacity = 1
-        layer0.shadowRadius = 2
-        layer0.shadowOffset = CGSize(width: 0, height: 2)
-        layer0.bounds = shadows.bounds
-        layer0.position = shadows.center
-        shadows.layer.addSublayer(layer0)
-        
-        buttonView.addSubview(shadows)
-        
-        let shapes = UIView()
-        shapes.isUserInteractionEnabled = true
-        shapes.frame = self.exploreButton.frame
-        shapes.clipsToBounds = true
-        
-
-        let layer1 = CALayer()
-        layer1.backgroundColor = UIColor(red: 0.924, green: 0.409, blue: 0.376, alpha: 1).cgColor
-        layer1.bounds = shapes.bounds
-        layer1.position = shapes.center
-        shapes.layer.addSublayer(layer1)
-        shapes.layer.cornerRadius = 5
-        buttonView.addSubview(shapes)
-        
-        self.exploreButton.addSubview(buttonView)
-        
-        self.exploreButton.contentHorizontalAlignment = .center
-        self.exploreButton.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-        
-        
         
         self.view.addSubview(self.exploreButton)
         
-  
-        //setup constraints
         self.exploreButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        self.exploreButton.topAnchor.constraint(equalTo: self.medImage.bottomAnchor, constant: 120).isActive = true
-        self.exploreButton.widthAnchor.constraint(equalToConstant: 240).isActive = true
-        self.exploreButton.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        self.exploreButton.topAnchor.constraint(equalTo: self.medImage.bottomAnchor, constant: 30).isActive = true
+        
+        self.exploreButton.addTarget(self, action: #selector(exploreButtonClicked), for: .touchUpInside)
+
     }
     
     @available(iOS 13.0, *)
     @objc func exploreButtonClicked(){
         print("explore button clicked")
         
-        let loginStoryboard = UIStoryboard(name: Constants.storyboard_login, bundle: Bundle.main)
-        guard let destination = loginStoryboard.instantiateViewController(identifier: Constants.viewController_loginHomeVC) as? LoginHomeVC else{
+        let loginStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let destination = loginStoryboard.instantiateViewController(identifier: Constants.segue_homeTab) as? CustomTabBar else{
             print(" Couldn't find the view controller")
             return
         }
-        destination.navigationItem.title = Constants.titles.loginHome
-        navigationController?.pushViewController(destination, animated: true)
+        //destination.navigationItem.title = Constants.titles.loginHome
+        self.navigationController?.pushViewController(destination, animated: true)
     }
  
 }
