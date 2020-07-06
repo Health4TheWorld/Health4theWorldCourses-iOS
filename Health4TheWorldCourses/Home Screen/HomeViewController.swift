@@ -21,7 +21,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = Constants.titles.home
         setupView()
         
           let db = Firestore.firestore()
