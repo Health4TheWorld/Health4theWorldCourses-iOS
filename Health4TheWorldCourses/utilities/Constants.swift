@@ -14,7 +14,7 @@ enum Constants{
         static let courses: String = "courses"
         static let users : String = "users"
         static let authors : String =  "authors"
-        
+        static let events: String = "events"
     }
 
     enum Profile {
