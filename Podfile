@@ -8,7 +8,7 @@ target 'Health4TheWorldCourses' do
   # Pods for Health4TheWorldCourses	
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
-
+  pod 'FirebaseFirestoreSwift'
 
 
 end

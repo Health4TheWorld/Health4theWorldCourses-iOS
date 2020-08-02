@@ -1,0 +1,6 @@
+framework module Pods_Health4TheWorldCourses {
+  umbrella header "Pods-Health4TheWorldCourses-umbrella.h"
+
+  export *
+  module * { export * }
+}
