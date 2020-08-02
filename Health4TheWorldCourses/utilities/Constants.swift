@@ -66,6 +66,8 @@ enum Constants{
     /* View Titles **/
     enum titles {
         static let home: String = "Home"
+        static let saved: String = "Saved"
+        static let profile: String = "Profile"
         static let loginHome: String = "H4TW Academy"
     }
     

@@ -64,7 +64,6 @@ class WelcomeVC: UIViewController {
 
     }
     
-    @available(iOS 13.0, *)
     @objc func exploreButtonClicked(){
         print("explore button clicked")
         
