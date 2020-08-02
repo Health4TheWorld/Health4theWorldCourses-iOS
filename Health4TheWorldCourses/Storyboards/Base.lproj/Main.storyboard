@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ4-Yr-IuZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ4-Yr-IuZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Catalog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hk6-p2-Q6u">
-                                <rect key="frame" x="20" y="59" width="384" height="28"/>
+                                <rect key="frame" x="20" y="49" width="384" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="gew-Xo-J2s"/>
                                 </constraints>
@@ -62,12 +62,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HXa-WP-r4F">
-                                <rect key="frame" x="0.0" y="102" width="414" height="163"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="163" id="nXk-C8-DIP"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RWu-uX-3rW">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="RWu-uX-3rW">
                                     <size key="itemSize" width="128" height="127"/>
                                     <size key="headerReferenceSize" width="0.0" height="5"/>
                                     <size key="footerReferenceSize" width="0.0" height="5"/>
@@ -124,7 +124,7 @@
                                 </collectionReusableView>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-X3-P1G">
-                                <rect key="frame" x="20" y="275" width="374" height="336"/>
+                                <rect key="frame" x="20" y="265" width="374" height="346"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Subjects" id="Gbe-q5-TRs">
@@ -146,25 +146,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended Courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrJ-Jk-YSf">
+                                <rect key="frame" x="5" y="82" width="179" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="AX9-mz-AxR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GrJ-Jk-YSf" firstAttribute="top" secondItem="Hk6-p2-Q6u" secondAttribute="bottom" constant="5" id="0Uv-GW-xxu"/>
                             <constraint firstItem="HXa-WP-r4F" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" id="7pH-Cy-qBJ"/>
                             <constraint firstItem="FN6-X3-P1G" firstAttribute="trailing" secondItem="a1P-Nw-ISn" secondAttribute="trailing" constant="-20" id="8sV-7a-k31"/>
                             <constraint firstItem="FYf-Gv-Ytr" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" constant="14" id="9fK-5S-8kx"/>
                             <constraint firstItem="FN6-X3-P1G" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" constant="20" id="Awb-e8-3go"/>
-                            <constraint firstItem="HXa-WP-r4F" firstAttribute="top" secondItem="Hk6-p2-Q6u" secondAttribute="bottom" constant="15" id="FaQ-qD-e5d"/>
                             <constraint firstItem="iez-aH-O5w" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" id="IbZ-eg-PdS"/>
                             <constraint firstItem="a1P-Nw-ISn" firstAttribute="trailing" secondItem="Hk6-p2-Q6u" secondAttribute="trailing" constant="10" id="KgV-dN-IS7"/>
                             <constraint firstItem="iez-aH-O5w" firstAttribute="trailing" secondItem="a1P-Nw-ISn" secondAttribute="trailing" id="Mft-gd-c9e"/>
                             <constraint firstItem="a1P-Nw-ISn" firstAttribute="trailing" secondItem="FYf-Gv-Ytr" secondAttribute="trailing" constant="183" id="RE3-cX-oxd"/>
                             <constraint firstItem="Hk6-p2-Q6u" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" constant="20" id="Rx4-YR-5pu"/>
                             <constraint firstItem="iez-aH-O5w" firstAttribute="top" secondItem="FYf-Gv-Ytr" secondAttribute="bottom" constant="10" id="ZiO-SG-Kdt"/>
+                            <constraint firstItem="GrJ-Jk-YSf" firstAttribute="leading" secondItem="a1P-Nw-ISn" secondAttribute="leading" constant="5" id="b1O-Fh-Uje"/>
                             <constraint firstItem="iez-aH-O5w" firstAttribute="bottom" secondItem="a1P-Nw-ISn" secondAttribute="bottom" id="baV-7l-fcY"/>
-                            <constraint firstItem="Hk6-p2-Q6u" firstAttribute="top" secondItem="a1P-Nw-ISn" secondAttribute="top" constant="15" id="eGM-NJ-bsu"/>
+                            <constraint firstItem="Hk6-p2-Q6u" firstAttribute="top" secondItem="a1P-Nw-ISn" secondAttribute="top" constant="5" id="eGM-NJ-bsu"/>
                             <constraint firstItem="FYf-Gv-Ytr" firstAttribute="top" secondItem="FN6-X3-P1G" secondAttribute="bottom" constant="10" id="fS6-xI-WCj"/>
+                            <constraint firstItem="a1P-Nw-ISn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GrJ-Jk-YSf" secondAttribute="trailing" symbolic="YES" id="l22-3s-Xj0"/>
                             <constraint firstItem="a1P-Nw-ISn" firstAttribute="trailing" secondItem="HXa-WP-r4F" secondAttribute="trailing" id="qeC-5k-Iju"/>
                             <constraint firstItem="FN6-X3-P1G" firstAttribute="top" secondItem="HXa-WP-r4F" secondAttribute="bottom" constant="10" id="vce-Hd-G3j"/>
+                            <constraint firstItem="HXa-WP-r4F" firstAttribute="top" secondItem="GrJ-Jk-YSf" secondAttribute="top" constant="10" id="vit-tB-uqE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a1P-Nw-ISn"/>
                     </view>
@@ -173,7 +185,9 @@
                     <connections>
                         <outlet property="RCCollectionView" destination="HXa-WP-r4F" id="8y6-fc-gRM"/>
                         <outlet property="UECollectionView" destination="iez-aH-O5w" id="kBC-C1-UWm"/>
+                        <outlet property="recommendedCoursesLabel" destination="GrJ-Jk-YSf" id="egw-Fp-BF0"/>
                         <outlet property="subjectsTableView" destination="FN6-X3-P1G" id="Erh-wg-F6u"/>
+                        <outlet property="upcomingEventsLabel" destination="FYf-Gv-Ytr" id="nVQ-MU-lgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ea4-BT-m3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,7 +485,7 @@
         <image name="Ellipse 63" width="52" height="52"/>
         <image name="Home-solid-chim" width="24" height="20"/>
         <image name="Home-solid-chim-green" width="21" height="18"/>
-        <image name="Logo_Text_Transparent 2 (2)" width="181" height="180"/>
+        <image name="Logo_Text_Transparent 2 (2)" width="90" height="90"/>
         <image name="Profile Icon" width="36" height="49"/>
         <image name="Profile Icon-green" width="18" height="20"/>
         <image name="ProfileIcon-Unselected" width="18" height="20"/>

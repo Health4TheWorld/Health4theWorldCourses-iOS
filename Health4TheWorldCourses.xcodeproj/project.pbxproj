@@ -21,6 +21,10 @@
 		169101A6240329AC00625A34 /* SubjectsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A5240329AC00625A34 /* SubjectsViewCell.swift */; };
 		169101A82403369100625A34 /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169101A72403369100625A34 /* EventsViewCell.swift */; };
 		1698237124B134E9001A57EC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1698237024B134E9001A57EC /* CustomButton.swift */; };
+		16A62C8E24D62274005B0A24 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A62C8D24D62274005B0A24 /* EventsModel.swift */; };
+		16AE161124CCE04F0082C42A /* CoursesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AE161024CCE04F0082C42A /* CoursesModel.swift */; };
+		16AE161624CE360F0082C42A /* SnapshotExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AE161524CE360F0082C42A /* SnapshotExtensions.swift */; };
+		16AE161924CE54690082C42A /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 16AE161824CE54680082C42A /* roboto */; };
 		16B30642240B86DC00CA4BC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16B30641240B86DC00CA4BC4 /* GoogleService-Info.plist */; };
 		16B30644240B90B400CA4BC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B30643240B90B400CA4BC4 /* Constants.swift */; };
 		16B30646240CDFB300CA4BC4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B30645240CDFB300CA4BC4 /* Login.storyboard */; };
@@ -29,7 +33,7 @@
 		16B3064D240CE06400CA4BC4 /* LoginHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064C240CE06400CA4BC4 /* LoginHomeVC.swift */; };
 		16B30650240E04B000CA4BC4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064F240E04B000CA4BC4 /* WelcomeVC.swift */; };
 		16B30652240F745400CA4BC4 /* ConstantTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B30651240F745400CA4BC4 /* ConstantTexts.swift */; };
-		49409994CABEAD8BF1A19397 /* Pods_Health4TheWorldCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E24E26C7C1E9A6F555A8DF /* Pods_Health4TheWorldCourses.framework */; };
+		75BD1612D05D56C67E04175C /* Pods_Health4TheWorldCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315B51982C4F2C13055A051F /* Pods_Health4TheWorldCourses.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		169101A5240329AC00625A34 /* SubjectsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewCell.swift; sourceTree = "<group>"; };
 		169101A72403369100625A34 /* EventsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
 		1698237024B134E9001A57EC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		16A62C8D24D62274005B0A24 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		16AE161024CCE04F0082C42A /* CoursesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesModel.swift; sourceTree = "<group>"; };
+		16AE161524CE360F0082C42A /* SnapshotExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotExtensions.swift; sourceTree = "<group>"; };
+		16AE161824CE54680082C42A /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		16B30641240B86DC00CA4BC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16B30643240B90B400CA4BC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		16B30645240CDFB300CA4BC4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -58,9 +66,9 @@
 		16B3064C240CE06400CA4BC4 /* LoginHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeVC.swift; sourceTree = "<group>"; };
 		16B3064F240E04B000CA4BC4 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		16B30651240F745400CA4BC4 /* ConstantTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantTexts.swift; sourceTree = "<group>"; };
-		19E24E26C7C1E9A6F555A8DF /* Pods_Health4TheWorldCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health4TheWorldCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68C2F298A520AFB935C7ACE1 /* Pods-Health4TheWorldCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.release.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.release.xcconfig"; sourceTree = "<group>"; };
-		E9CD340988DA3F8A19F412DF /* Pods-Health4TheWorldCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.debug.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.debug.xcconfig"; sourceTree = "<group>"; };
+		315B51982C4F2C13055A051F /* Pods_Health4TheWorldCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health4TheWorldCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7C6BE77A14FF648753020E /* Pods-Health4TheWorldCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.release.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.release.xcconfig"; sourceTree = "<group>"; };
+		C2950A839323B96FD0501623 /* Pods-Health4TheWorldCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.debug.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49409994CABEAD8BF1A19397 /* Pods_Health4TheWorldCourses.framework in Frameworks */,
+				75BD1612D05D56C67E04175C /* Pods_Health4TheWorldCourses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +89,7 @@
 				1691017A23F5199C00625A34 /* Health4TheWorldCourses */,
 				1691017923F5199C00625A34 /* Products */,
 				2340709EC8CA0E8B4BFF575C /* Pods */,
-				CC0252AEFC751C686103B59F /* Frameworks */,
+				F8A69F13EF3D265DEA9D5B81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +104,7 @@
 		1691017A23F5199C00625A34 /* Health4TheWorldCourses */ = {
 			isa = PBXGroup;
 			children = (
+				16AE161224CCF21A0082C42A /* View Models */,
 				1698236F24B134BF001A57EC /* Custom Button */,
 				16B3064E240E048C00CA4BC4 /* Welcome Screen */,
 				16B30647240CDFDA00CA4BC4 /* Login Screens */,
@@ -143,6 +152,7 @@
 		1691019123F527F400625A34 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				16AE161724CE54490082C42A /* Fonts */,
 				1691018223F519A400625A34 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -151,6 +161,8 @@
 		1691019223F5280D00625A34 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				16AE161024CCE04F0082C42A /* CoursesModel.swift */,
+				16A62C8D24D62274005B0A24 /* EventsModel.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -186,6 +198,22 @@
 			path = "Custom Button";
 			sourceTree = "<group>";
 		};
+		16AE161224CCF21A0082C42A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				16AE161524CE360F0082C42A /* SnapshotExtensions.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		16AE161724CE54490082C42A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				16AE161824CE54680082C42A /* roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		16B30647240CDFDA00CA4BC4 /* Login Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,16 +235,16 @@
 		2340709EC8CA0E8B4BFF575C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9CD340988DA3F8A19F412DF /* Pods-Health4TheWorldCourses.debug.xcconfig */,
-				68C2F298A520AFB935C7ACE1 /* Pods-Health4TheWorldCourses.release.xcconfig */,
+				C2950A839323B96FD0501623 /* Pods-Health4TheWorldCourses.debug.xcconfig */,
+				9A7C6BE77A14FF648753020E /* Pods-Health4TheWorldCourses.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CC0252AEFC751C686103B59F /* Frameworks */ = {
+		F8A69F13EF3D265DEA9D5B81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				19E24E26C7C1E9A6F555A8DF /* Pods_Health4TheWorldCourses.framework */,
+				315B51982C4F2C13055A051F /* Pods_Health4TheWorldCourses.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,11 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1691018A23F519A400625A34 /* Build configuration list for PBXNativeTarget "Health4TheWorldCourses" */;
 			buildPhases = (
-				F9A30EFBC7C9AA150A80E830 /* [CP] Check Pods Manifest.lock */,
+				4A4BB6C2D36170B721362186 /* [CP] Check Pods Manifest.lock */,
 				1691017423F5199C00625A34 /* Sources */,
 				1691017523F5199C00625A34 /* Frameworks */,
 				1691017623F5199C00625A34 /* Resources */,
-				36C470385074D26E445D592D /* [CP] Embed Pods Frameworks */,
+				3127501C33CEE49BBE141F74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1691018623F519A400625A34 /* LaunchScreen.storyboard in Resources */,
+				16AE161924CE54690082C42A /* roboto in Resources */,
 				16B30642240B86DC00CA4BC4 /* GoogleService-Info.plist in Resources */,
 				1691018323F519A400625A34 /* Assets.xcassets in Resources */,
 				16B30646240CDFB300CA4BC4 /* Login.storyboard in Resources */,
@@ -300,7 +329,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36C470385074D26E445D592D /* [CP] Embed Pods Frameworks */ = {
+		3127501C33CEE49BBE141F74 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +346,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9A30EFBC7C9AA150A80E830 /* [CP] Check Pods Manifest.lock */ = {
+		4A4BB6C2D36170B721362186 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,13 +384,16 @@
 				16B3064D240CE06400CA4BC4 /* LoginHomeVC.swift in Sources */,
 				16B30650240E04B000CA4BC4 /* WelcomeVC.swift in Sources */,
 				1691019E23FA5F9B00625A34 /* CustomTabBar.swift in Sources */,
+				16AE161124CCE04F0082C42A /* CoursesModel.swift in Sources */,
 				169101A023FA67D000625A34 /* HomeViewController.swift in Sources */,
 				169101A82403369100625A34 /* EventsViewCell.swift in Sources */,
 				169101A223FA680D00625A34 /* SavedViewController.swift in Sources */,
 				169101A6240329AC00625A34 /* SubjectsViewCell.swift in Sources */,
 				1698237124B134E9001A57EC /* CustomButton.swift in Sources */,
+				16AE161624CE360F0082C42A /* SnapshotExtensions.swift in Sources */,
 				16B3064B240CE01800CA4BC4 /* SignUpVC.swift in Sources */,
 				1691019C23FA53DA00625A34 /* AboutUsVC.swift in Sources */,
+				16A62C8E24D62274005B0A24 /* EventsModel.swift in Sources */,
 				169101A423FE5C4500625A34 /* Courses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +538,7 @@
 		};
 		1691018B23F519A400625A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9CD340988DA3F8A19F412DF /* Pods-Health4TheWorldCourses.debug.xcconfig */;
+			baseConfigurationReference = C2950A839323B96FD0501623 /* Pods-Health4TheWorldCourses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Health4TheWorldCourses/Health4TheWorldCourses.entitlements;
@@ -527,7 +559,7 @@
 		};
 		1691018C23F519A400625A34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68C2F298A520AFB935C7ACE1 /* Pods-Health4TheWorldCourses.release.xcconfig */;
+			baseConfigurationReference = 9A7C6BE77A14FF648753020E /* Pods-Health4TheWorldCourses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Health4TheWorldCourses/Health4TheWorldCourses.entitlements;
