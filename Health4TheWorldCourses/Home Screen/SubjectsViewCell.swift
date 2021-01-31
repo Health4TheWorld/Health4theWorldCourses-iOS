@@ -10,6 +10,8 @@ import UIKit
 
 class SubjectsViewCell: UITableViewCell {
     
+    // var containingViewController: UIViewController // ?
+    
     let itemView: UILabel = {
         let item = UILabel()
         //item.frame = CGRect(x: 0, y: 0, width: 187, height: 48)
@@ -72,6 +74,7 @@ class SubjectsViewCell: UITableViewCell {
     
     @objc private func handleProfileSelect(){
         print("item selected")
+        // self.containingViewController.performSegue(withIdentifier: "showSubject", sender: self)
     }
     
     required init?(coder aDecoder: NSCoder) {

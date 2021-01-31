@@ -34,6 +34,7 @@
 		16B30650240E04B000CA4BC4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3064F240E04B000CA4BC4 /* WelcomeVC.swift */; };
 		16B30652240F745400CA4BC4 /* ConstantTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B30651240F745400CA4BC4 /* ConstantTexts.swift */; };
 		75BD1612D05D56C67E04175C /* Pods_Health4TheWorldCourses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315B51982C4F2C13055A051F /* Pods_Health4TheWorldCourses.framework */; };
+		CB5E31FF25C6585E00E4DCEA /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5E31FE25C6585E00E4DCEA /* SubjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		315B51982C4F2C13055A051F /* Pods_Health4TheWorldCourses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health4TheWorldCourses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7C6BE77A14FF648753020E /* Pods-Health4TheWorldCourses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.release.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.release.xcconfig"; sourceTree = "<group>"; };
 		C2950A839323B96FD0501623 /* Pods-Health4TheWorldCourses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health4TheWorldCourses.debug.xcconfig"; path = "Target Support Files/Pods-Health4TheWorldCourses/Pods-Health4TheWorldCourses.debug.xcconfig"; sourceTree = "<group>"; };
+		CB5E31FE25C6585E00E4DCEA /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				169101A323FE5C4500625A34 /* Courses.swift */,
 				169101A5240329AC00625A34 /* SubjectsViewCell.swift */,
 				169101A72403369100625A34 /* EventsViewCell.swift */,
+				CB5E31FE25C6585E00E4DCEA /* SubjectViewController.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				1691017E23F5199C00625A34 /* ProfileViewController.swift in Sources */,
 				1691019523F9200A00625A34 /* ProfileCell.swift in Sources */,
 				16B30649240CE00300CA4BC4 /* LoginVC.swift in Sources */,
+				CB5E31FF25C6585E00E4DCEA /* SubjectViewController.swift in Sources */,
 				1691017C23F5199C00625A34 /* AppDelegate.swift in Sources */,
 				16B30644240B90B400CA4BC4 /* Constants.swift in Sources */,
 				16B3064D240CE06400CA4BC4 /* LoginHomeVC.swift in Sources */,

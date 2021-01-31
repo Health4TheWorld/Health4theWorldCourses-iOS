@@ -184,7 +184,19 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
         
         cell.iconView.image = UIImage(named: Constants.Subjects.icons[indexPath.row])
         
+        // cell.containingViewController = self
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let subjects = Constants.Subjects.subjectsList
+        let selectedSubject = subjects[indexPath.row]
+        let destinationVC = (UIStoryboard(name: "Main",bundle: nil).instantiateViewController(withIdentifier: "SubjectVC") as? SubjectViewController)!
+        destinationVC.subject = selectedSubject
+        print(selectedSubject)
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+        // destinationVC.performSegue(withIdentifier: "showSubject", sender: self)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

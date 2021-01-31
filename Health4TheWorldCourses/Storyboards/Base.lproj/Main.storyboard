@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ4-Yr-IuZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQ4-Yr-IuZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -156,6 +157,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="a1P-Nw-ISn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GrJ-Jk-YSf" firstAttribute="top" secondItem="Hk6-p2-Q6u" secondAttribute="bottom" constant="5" id="0Uv-GW-xxu"/>
@@ -178,7 +180,6 @@
                             <constraint firstItem="FN6-X3-P1G" firstAttribute="top" secondItem="HXa-WP-r4F" secondAttribute="bottom" constant="10" id="vce-Hd-G3j"/>
                             <constraint firstItem="HXa-WP-r4F" firstAttribute="top" secondItem="GrJ-Jk-YSf" secondAttribute="top" constant="10" id="vit-tB-uqE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="a1P-Nw-ISn"/>
                     </view>
                     <navigationItem key="navigationItem" id="6cy-Vb-Aqb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -288,6 +289,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dzv-wJ-X2C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cz8-Qp-Xv4"/>
@@ -295,7 +297,6 @@
                             <constraint firstItem="dzv-wJ-X2C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ywe-cJ-Uhh"/>
                             <constraint firstItem="dzv-wJ-X2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g1M-wj-vxt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="ProfileIcon-Unselected" selectedImage="Profile Icon-green" id="b5k-l4-k30"/>
                     <navigationItem key="navigationItem" id="uOL-Qa-V0c"/>
@@ -318,13 +319,56 @@
                     <view key="view" contentMode="scaleToFill" id="41P-0p-h3L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7qN-DS-PUx"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cYb-wb-Uzf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax2-O5-au5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994" y="19"/>
+        </scene>
+        <!--Subject-->
+        <scene sceneID="7Rf-qQ-g2N">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kN5-5H-ut4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SubjectVC" title="Subject" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fhc-PB-SlI" customClass="SubjectViewController" customModule="Health4TheWorldCourses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLU-Rl-wNH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBv-vt-Qgf">
+                                <rect key="frame" x="10" y="98" width="394" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="vOP-lC-c3g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the subject description. For example, cardiology is the study of the heart, its actions, diseases, and abnormalities" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mER-NW-em7">
+                                <rect key="frame" x="10" y="288" width="394" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lud-pa-8KB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vBv-vt-Qgf" firstAttribute="top" secondItem="Lud-pa-8KB" secondAttribute="top" constant="10" id="MI5-d4-vwu"/>
+                            <constraint firstAttribute="trailing" secondItem="mER-NW-em7" secondAttribute="trailing" constant="10" id="aCQ-lj-UWx"/>
+                            <constraint firstItem="mER-NW-em7" firstAttribute="top" secondItem="vBv-vt-Qgf" secondAttribute="bottom" constant="10" id="cQK-ye-CzY"/>
+                            <constraint firstItem="mER-NW-em7" firstAttribute="leading" secondItem="Lud-pa-8KB" secondAttribute="leading" constant="10" id="dY8-Wn-eLZ"/>
+                            <constraint firstItem="vBv-vt-Qgf" firstAttribute="leading" secondItem="Lud-pa-8KB" secondAttribute="leading" constant="10" id="kfM-si-M1T"/>
+                            <constraint firstItem="vBv-vt-Qgf" firstAttribute="centerX" secondItem="jLU-Rl-wNH" secondAttribute="centerX" id="tF0-U9-qWr"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="subjectThumbnail" destination="vBv-vt-Qgf" id="jEC-8l-dCa"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="765" y="-1008"/>
         </scene>
         <!--Profile-->
         <scene sceneID="mVC-u9-jyK">
@@ -365,8 +409,8 @@
                     <view key="view" contentMode="scaleToFill" id="czU-Xm-hDu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UEb-hi-kuQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="qFy-p8-0KI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -401,7 +445,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARu-n0-VKw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Text_Transparent 2 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-zF-lnd">
                                 <rect key="frame" x="162" y="108" width="90" height="90"/>
@@ -445,7 +489,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="v4H-RT-x7O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="o5a-zF-lnd" firstAttribute="top" secondItem="v4H-RT-x7O" secondAttribute="top" constant="20" id="0zT-Yr-i7a"/>
                             <constraint firstItem="ARu-n0-VKw" firstAttribute="centerX" secondItem="PRf-oJ-b1d" secondAttribute="centerX" id="1Z7-ZS-M4L"/>
@@ -465,7 +510,6 @@
                             <constraint firstItem="PRf-oJ-b1d" firstAttribute="top" secondItem="yOJ-eV-LKB" secondAttribute="bottom" constant="10" id="oqd-JL-LRd"/>
                             <constraint firstItem="ARu-n0-VKw" firstAttribute="leading" secondItem="wHB-Gx-TWB" secondAttribute="leading" id="wiE-Jr-ZCr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="v4H-RT-x7O"/>
                     </view>
                     <navigationItem key="navigationItem" id="LCM-fC-a8f"/>
                     <connections>
@@ -493,5 +537,8 @@
         <image name="Star" width="19" height="18"/>
         <image name="Star-icon-green" width="20" height="20"/>
         <image name="undraw_medicine_b1ol (1) 1" width="233" height="165"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
